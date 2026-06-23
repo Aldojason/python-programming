@@ -1,0 +1,1 @@
+a=dict(map(int,input("Enter key-value pairs separated by space: ").split()))
