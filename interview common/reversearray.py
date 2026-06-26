@@ -1,8 +1,8 @@
-a=[10,20,30,50]
-first=0
-second=len(a)-1
-while first<second:
-    a[first],a[second]=a[second],a[first]
-    first+=1
-    second-=1
+a=[1,2,3,4,5]
+left=0
+right=len(a)-1
+while left<right:
+    a[left],a[right]=a[right],a[left]
+    left+=1
+    right-=1
 print(a)

@@ -1,16 +1,14 @@
-def palindrome(text):
-    text=text.lower()
-    newstring=""
-    for ch in text:
-        if ch.isalnum():
-            newstring+=ch
-    left=0
-    right=len(newstring)-1
-    while left<right:
-        if newstring[left]!=newstring[right]:
-            return False
-        left+=1
-        right-=1
-    return True
-s=input("enter the text:")
-print(palindrome(s))
+s='maabam'
+left=0
+right=len(s)-1
+is_palindrome=True
+while left<right:
+    if s[left]!=s[right]:
+        is_palindrome=False
+        break
+    left+=1
+    right-=1  
+if is_palindrome:
+    print("true")
+else:
+    print("false")
